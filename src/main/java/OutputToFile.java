@@ -18,8 +18,8 @@ public class OutputToFile {
         pw.println (nazwaStrony + data);
 
         for (Map.Entry<String, Integer> p : mapa.entrySet()){
-            pw.println(p.getKey() +" = " + p.getValue());}
-
+            pw.println(p.getKey() +" = " + p.getValue());
+        }
 
         pw.close();
     }
