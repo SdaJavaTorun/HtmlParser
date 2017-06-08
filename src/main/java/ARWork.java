@@ -5,7 +5,7 @@ import java.util.stream.Collectors;
 
 public class ARWork {
 
-    public static Map<String, Integer> extrackStringToMap(String input) {
+    public static Map<String, Integer> extracktStringToMap(String input) {
         Map<String, Integer> map = new HashMap<>();
         String [] subString = input.split("([^A-Za-zżźćńółęąśŻŹĆĄŚĘŁÓŃ]+)");
 

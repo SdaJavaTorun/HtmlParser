@@ -11,14 +11,14 @@ public class ARWorkTest {
    @Test
     public void shouldReturnsMapSizeOfThree() {
         String sentence = "mango torun dom dom torun mango";
-        Map<String, Integer> map = ARWork.extrackStringToMap(sentence);
+        Map<String, Integer> map = ARWork.extracktStringToMap(sentence);
         assertEquals(3, map.size());
     }
 
     @Test
     public void shouldReturnsMapSizeOfFive() {
         String sentence = "mango torun dom dom torun mango torun2 dom2 dom torun mango";
-        Map<String, Integer> map = ARWork.extrackStringToMap(sentence);
+        Map<String, Integer> map = ARWork.extracktStringToMap(sentence);
         assertEquals(5, map.size());
     }
 
