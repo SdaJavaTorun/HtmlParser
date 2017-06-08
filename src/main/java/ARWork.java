@@ -7,7 +7,7 @@ public class ARWork {
 
     public static Map<String, Integer> extrackStringToMap(String input) {
         Map<String, Integer> map = new HashMap<>();
-        String [] subString = input.split(" ");
+        String [] subString = input.split("\\s+|\\d+");
 
         for (String word : subString) {
             if (map.containsKey(word)) {

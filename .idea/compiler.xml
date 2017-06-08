@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="HtmlParser" />
+        <module name="seo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="HtmlParser" target="1.8" />
+      <module name="seo" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

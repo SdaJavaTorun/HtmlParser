@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import static org.junit.Assert.*;
 
 public class ARWorkTest {
-    @Test
+   @Test
     public void shouldReturnsMapSizeOfThree() {
         String sentence = "mango torun dom dom torun mango";
         Map<String, Integer> map = ARWork.extrackStringToMap(sentence);
@@ -92,4 +92,5 @@ public class ARWorkTest {
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
                         (oldValue, newValue) -> oldValue, LinkedHashMap::new));
     }
+
 }
