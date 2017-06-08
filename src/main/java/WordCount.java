@@ -12,18 +12,19 @@ public class WordCount {
 
     public static void main(String[] args) throws IOException {
 
-
-        Document document = Jsoup.connect("https://www.onet.pl/").get();
+        String nazwaStrony = "https://www.onet.pl/";
+        Document document = Jsoup.connect(nazwaStrony).get();
         String text = document.body().text();
 
         //System.out.println(text);
 
         Map<String, Integer> mapa = ARWork.extrackStringToMap(text);
         System.out.println(ARWork.sortMapByKeyAscending(mapa));
-
         DateFormat df = new SimpleDateFormat("dd/MM/yyyy");
         String requiredDate = df.format(new Date()).toString();
         System.out.println(requiredDate);
+
+        OutputToFile.output(ARWork.sortMapByKeyAscending(mapa), nazwaStrony, requiredDate);
 
 
     }
