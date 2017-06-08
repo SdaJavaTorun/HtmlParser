@@ -16,7 +16,11 @@ public class OutputToFile {
         FileWriter fw = new FileWriter (output, true);
         PrintWriter pw = new PrintWriter (output);
         pw.println (nazwaStrony + data);
-        pw.println(mapa);
+
+        for (Map.Entry<String, Integer> p : mapa.entrySet()){
+            pw.println(p.getKey() +" = " + p.getValue());}
+
+
         pw.close();
     }
 }
