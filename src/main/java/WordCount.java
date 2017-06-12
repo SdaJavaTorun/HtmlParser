@@ -7,17 +7,14 @@ import java.util.Map;
 import java.util.SortedSet;
 import java.util.TreeSet;
 
-
 public class WordCount {
 
     public static void main(String[] args) throws IOException {
-
 
         Document document = Jsoup.connect("http://en.wikipedia.org/").get();
         String text = document.body().text();
 
         System.out.println(text);
-
 
         Map<String, Word> countMap = new HashMap<String, Word>();
 
@@ -37,11 +34,9 @@ public class WordCount {
                     wordObj.count = 0;
                     countMap.put(word, wordObj);
                 }
-
                 wordObj.count++;
             }
         }
-
         reader.close();
 
         SortedSet<Word> sortedWords = new TreeSet<Word>(countMap.values());
@@ -50,13 +45,9 @@ public class WordCount {
             if (i > 10) {
                 break;
             }
-
             System.out.println(word.count + "\t" + word.word);
-
             i++;
         }
-
-
     }
 }
 

@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HtmlParser.iml" filepath="$PROJECT_DIR$/HtmlParser.iml" />
+      <module fileurl="file://C:\cygwin64\home\RENT\Projects\HtmlParser\HtmlParser.iml" filepath="C:\cygwin64\home\RENT\Projects\HtmlParser\HtmlParser.iml" />
     </modules>
   </component>
 </project>

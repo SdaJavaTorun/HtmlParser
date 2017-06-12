@@ -1,4 +1,5 @@
 
+
 public class Word implements Comparable <Word> {
 
     String word;
