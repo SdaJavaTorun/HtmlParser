@@ -5,5 +5,9 @@
 # IntelliJ project files
 .idea
 *.iml
+target
 out
 gen
+src/test/java/
+target/generated-sources/
+target/generated-test-sources/
