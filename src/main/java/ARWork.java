@@ -31,12 +31,12 @@ public class ARWork {
         return sortedMapJava8;
     }
 
-    public static Map<String,Integer> sortMapByKeyDescending(Map<String, Integer> inputMap) {
+    /*public static Map<String,Integer> sortMapByKeyDescending(Map<String, Integer> inputMap) {
         Map<String, Integer> sortedMapJava8 =
                 inputMap.entrySet().stream()
                         .sorted(Map.Entry.<String, Integer>comparingByKey().reversed())
                         .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
                                 (oldValue, newValue) -> oldValue, LinkedHashMap::new));
         return sortedMapJava8;
-    }
+    }*/
 }

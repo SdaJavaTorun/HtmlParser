@@ -8,6 +8,4 @@
 target
 out
 gen
-src/test/java/
-target/generated-sources/
-target/generated-test-sources/
+target/

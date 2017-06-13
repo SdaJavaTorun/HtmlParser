@@ -15,8 +15,8 @@ public class WordCount {
         System.out.println("Podaj adres strony");
         System.out.print("https://");
         Scanner sc = new Scanner(System.in);
-        String adres = sc.nextLine();
-        String nazwaStrony = "https://"+adres;
+        String shortPageName = sc.nextLine();
+        String nazwaStrony = "https://" + shortPageName;
         Document document = Jsoup.connect(nazwaStrony).get();
         String text = document.body().text();
 
@@ -28,10 +28,11 @@ public class WordCount {
         String requiredDate = df.format(new Date()).toString();
         System.out.println(requiredDate);
 
-        OutputToFile.output(ARWork.sortMapByKeyAscending(mapa), nazwaStrony, requiredDate);
-
+        OutputToFile.writeToFile(ARWork.sortMapByKeyAscending(mapa),
+                nazwaStrony,
+                requiredDate,
+                shortPageName);
     }
-
 }
 
 
